@@ -14,15 +14,28 @@ A modern Windows 11 desktop application for managing your e-commerce shopping ca
 - **Desktop Notifications**: Get alerts when prices drop
 - **Export/Import**: Save and share your cart data
 
+## 💻 System Requirements
+
+- **Operating System**: Windows 10/11 (64-bit)
+- **RAM**: 4GB minimum, 8GB recommended
+- **Storage**: 500MB free space
+- **Internet**: Required for price tracking and updates
+
 ## 📦 Installation
 
-### For Users
-1. Download the latest release from the [Releases page](https://github.com/yourusername/carto/releases)
-2. Run `Carto Setup 1.0.0.exe`
-3. Follow the installation wizard
-4. Launch Carto from your desktop or Start Menu
+### 🚀 Quick Install (Recommended)
+**For most users, this is the easiest way to get started:**
+
+1. **Download the latest release** from the [Releases page](https://github.com/affx08/carto/releases)
+2. **Run the installer** (`Carto Setup 1.0.0.exe`)
+3. **Follow the installation wizard** - it will guide you through the setup
+4. **Launch Carto** from your desktop or Start Menu
+
+That's it! Carto is now ready to use. 🎉
 
 ### For Developers
+
+> **Note**: If you just want to use Carto, use the [Quick Install](#-quick-install-recommended) method above. This section is for developers who want to contribute or modify the code.
 
 #### Prerequisites
 - Node.js (v16 or higher)
@@ -32,7 +45,7 @@ A modern Windows 11 desktop application for managing your e-commerce shopping ca
 #### Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/carto.git
+git clone https://github.com/affx08/carto.git
 cd carto
 
 # Install dependencies
@@ -99,11 +112,31 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Icons from Material-UI
 - Glass-morphism design inspiration from modern UI trends
 
+## 🔧 Troubleshooting
+
+### Common Issues
+
+**Installation fails:**
+- Make sure you're running Windows 10/11 (64-bit)
+- Try running the installer as Administrator
+- Disable antivirus temporarily if it blocks the installation
+
+**App won't start:**
+- Check if you have sufficient RAM (4GB minimum)
+- Ensure you have internet connection for initial setup
+- Try reinstalling from the latest release
+
+**Price tracking not working:**
+- Verify your internet connection
+- Check if the e-commerce sites are accessible
+- Restart the application
+
 ## 📞 Support
 
 If you encounter any issues or have questions:
-- Open an issue on GitHub
-- Check the [Wiki](https://github.com/yourusername/carto/wiki) for documentation
+- Open an issue on [GitHub](https://github.com/affx08/carto/issues)
+- Check the [Releases page](https://github.com/affx08/carto/releases) for the latest version
+- Make sure you're using the latest release before reporting issues
 
 ---
 
