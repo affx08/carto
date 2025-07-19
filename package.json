@@ -1,0 +1,66 @@
+{
+  "name": "carto",
+  "version": "1.0.0",
+  "description": "A Windows 11 e-commerce cart and price tracker desktop app",
+  "main": "electron/main.js",
+  "homepage": "./",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 http://localhost:5174 http://localhost:5175 http://localhost:5176 && electron .\"",
+    "electron-pack": "npm run build && electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "com.carto.app",
+    "productName": "Carto",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.10",
+    "@mui/x-date-pickers": "^6.0.0",
+    "@react-spring/web": "^10.0.1",
+    "canvas-confetti": "^1.9.3",
+    "chart.js": "^4.2.1",
+    "dayjs": "^1.11.7",
+    "framer-motion": "^12.23.6",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1",
+    "react-spring": "^10.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "concurrently": "^7.6.0",
+    "electron": "^24.0.0",
+    "electron-builder": "^24.0.0",
+    "png-to-ico": "^2.1.8",
+    "vite": "^4.1.0",
+    "wait-on": "^7.0.1"
+  },
+  "author": "Carto Team",
+  "license": "MIT"
+}
